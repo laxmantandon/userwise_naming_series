@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{user_name}-{user_doctype}-{is_return}-{####}",
+ "creation": "2021-10-27 19:09:24.287317",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_name",
+  "user_doctype",
+  "is_return",
+  "user_naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Link",
+   "label": "user name",
+   "options": "User"
+  },
+  {
+   "fieldname": "user_doctype",
+   "fieldtype": "Link",
+   "label": "user doctype",
+   "options": "DocType"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_return",
+   "fieldtype": "Check",
+   "label": "Is Return"
+  },
+  {
+   "fieldname": "user_naming_series",
+   "fieldtype": "Select",
+   "label": "User Naming Series"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-10-27 19:19:22.853294",
+ "modified_by": "Administrator",
+ "module": "User Naming Series",
+ "name": "User Naming Series",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

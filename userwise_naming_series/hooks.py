@@ -141,6 +141,7 @@ app_license = "MIT"
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
 
+fixtures = [{"dt":"Custom Field", "filters": {"dt": "User Naming Series"}}, 'User Naming Series']
 
 # User Data Protection
 # --------------------
