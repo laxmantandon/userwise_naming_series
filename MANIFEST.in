@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include userwise_naming_series *.css
+recursive-include userwise_naming_series *.csv
+recursive-include userwise_naming_series *.html
+recursive-include userwise_naming_series *.ico
+recursive-include userwise_naming_series *.js
+recursive-include userwise_naming_series *.json
+recursive-include userwise_naming_series *.md
+recursive-include userwise_naming_series *.png
+recursive-include userwise_naming_series *.py
+recursive-include userwise_naming_series *.svg
+recursive-include userwise_naming_series *.txt
+recursive-exclude userwise_naming_series *.pyc
