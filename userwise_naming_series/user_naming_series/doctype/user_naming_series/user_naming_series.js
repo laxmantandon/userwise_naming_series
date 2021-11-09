@@ -7,7 +7,8 @@ frappe.ui.form.on('User Naming Series', {
 	    frappe.db.get_list('Property Setter', {
 	        filters: {
 	            doc_type: frm.doc.user_doctype,
-	            field_name: 'naming_series'
+	            field_name: 'naming_series',
+				property: 'options'
 	        },
 	        fields: ["value"]
 	    })
