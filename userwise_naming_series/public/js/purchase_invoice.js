@@ -20,7 +20,7 @@ frappe.ui.form.on('Purchase Invoice', {
 			.then((data) => {
 			    if (data.length > 0) {
     				cur_frm.set_df_property("naming_series", "options", data[0].user_naming_series);
-    				frm.set_value("naming_series", data[0].user_naming_series);		        
+    				// frm.set_value("naming_series", data[0].user_naming_series);		        
 			    } else {
 			        frappe.msgprint({
 			            title: "Error",

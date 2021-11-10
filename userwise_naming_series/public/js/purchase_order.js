@@ -25,7 +25,7 @@ frappe.ui.form.on('Purchase Order', {
 					})
 					
     				cur_frm.set_df_property("naming_series", "options", naming_series);
-    				frm.set_value("naming_series", naming_series);		        
+    				// frm.set_value("naming_series", naming_series);		        
 			    } else {
 			        frappe.msgprint({
 			            title: "Error",
