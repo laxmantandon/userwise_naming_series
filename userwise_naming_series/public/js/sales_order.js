@@ -19,8 +19,13 @@ frappe.ui.form.on('Sales Order', {
 			})
 			.then((data) => {
 			    if (data.length > 0) {
-    				cur_frm.set_df_property("naming_series", "options", data[0].user_naming_series);
-    				frm.set_value("naming_series", data[0].user_naming_series);		        
+					var naming_series = "";
+					data.forEach(element => {
+						naming_series += element.user_naming_series + "\n";
+					})
+					
+    				cur_frm.set_df_property("naming_series", "options", naming_series);
+    				frm.set_value("naming_series", naming_series);		        
 			    } else {
 			        frappe.msgprint({
 			            title: "Error",
@@ -32,5 +37,4 @@ frappe.ui.form.on('Sales Order', {
 				frappe.msgprint(JSON.stringify(err));
 			});
     }
-	
 })

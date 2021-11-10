@@ -1,6 +1,6 @@
 frappe.ui.form.on('User Naming Series', {
 	refresh(frm) {
-		
+		frm.events.user_doctype(frm);
 	},
 	
 	user_doctype: function(frm) {

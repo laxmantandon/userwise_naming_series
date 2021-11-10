@@ -37,9 +37,8 @@
    "label": "User Naming Series"
   }
  ],
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-11-08 22:42:25.837232",
+ "modified": "2021-11-10 07:09:20.900635",
  "modified_by": "Administrator",
  "module": "User Naming Series",
  "name": "User Naming Series",
@@ -56,6 +55,12 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All"
   }
  ],
  "sort_field": "modified",
